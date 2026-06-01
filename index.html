@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>青葉整骨院 | 慢性腰痛・肩こり専門</title>
-  <meta name="description" content="慢性腰痛・肩こり専門の青葉整骨院。根本原因にアプローチし再発しない身体へ導きます。">
+  <title>整骨院LPテンプレート | 青葉整骨院</title>
+  <meta name="description" content="整骨院・整体院向けLPテンプレート。お悩み訴求、施術方針、選ばれる理由、料金、FAQ、予約フォームまで備えたスマホ対応のHTML/CSS実装済みランディングページです。">
+  <meta property="og:title" content="整骨院LPテンプレート | 青葉整骨院">
+  <meta property="og:description" content="整骨院・整体院向けLPテンプレート。信頼感のある構成と予約導線で、スマホでも見やすいHTML/CSS実装済みデザインです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kota-web-design.github.io/conversion-lp-clinic-01/">
+  <meta property="og:image" content="https://kota-web-design.github.io/conversion-lp-clinic-01/img/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%231F3A5F'/%3E%3Ctext%20x='32'%20y='42'%20font-size='30'%20text-anchor='middle'%20fill='white'%20font-family='Arial,sans-serif'%3E%E9%AA%A8%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,14 +24,16 @@
       <a href="#" class="logo">青葉整骨院</a>
 
       <!-- ナビゲーション -->
-      <nav>
+      <nav id="siteNav" aria-label="メインナビゲーション">
   <ul class="nav-menu">
 
-<button class="menu-close" aria-label="閉じる">×</button>
+<li class="menu-close-wrapper">
+<button class="menu-close" type="button" aria-label="メニューを閉じる">×</button>
+</li>
 
 <li><a href="#concerns" class="nav-link">お悩み</a></li>
 <li><a href="#treatment" class="nav-link">施術法</a></li>
-<li><a href="#case" class="nav-link">改善事例</a></li>
+<li><a href="#case" class="nav-link">お客様の声</a></li>
 <li><a href="#profile" class="nav-link">院長紹介</a></li>
 <li><a href="#price" class="nav-link">料金</a></li>
 <li><a href="#contact" class="btn nav-cta">予約・相談</a></li>
@@ -33,11 +42,11 @@
 </nav>
 
       <!-- ハンバーガーメニュー -->
-      <div class="hamburger" aria-label="メニュー" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-controls="siteNav" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </div>
   </header>
 
@@ -52,21 +61,21 @@
     <!-- メインコピー -->
     <h1 class="hero-title">
       その慢性的な腰痛や<br class="sp-only">肩こり、<br>
-      もう我慢しなくていい。
+      ひとりで我慢し続けないで。
     </h1>
 
     <!-- サブコピー -->
     <p class="hero-subtitle">
       慢性腰痛・肩こり専門。<br>
-      痛みの「本当の原因」にアプローチし、
-      <br class="sp-only">再発しにくい身体へ導きます。
+      痛みにつながる姿勢や身体のクセに着目し、
+      <br class="sp-only">不調の軽減を目指します。
     </p>
 
     <!-- 信頼ミニ要素 -->
     <ul class="hero-features">
       <li>国家資格保有</li>
       <li>完全予約制</li>
-      <li>延べ3万人以上の施術実績</li>
+      <li>施術実績の掲載に対応</li>
     </ul>
 
     <!-- CTAボタン -->
@@ -113,18 +122,18 @@
 
     <p class="concerns-bridge fade-in">
       1つでも当てはまるなら、その痛みには<br class="sp-only">
-      <strong>「本当の原因」</strong>が隠れているかも<br class="sp-only">しれません。
+      <strong>身体の使い方や姿勢のクセ</strong>が関係しているかも<br class="sp-only">しれません。
     </p>
   </div>
 </section>
 
 <!-- ===============================
-     3. なぜ改善しないのか？
+     3. なぜ繰り返しやすいのか？
 ================================ -->
 <section id="why">
   <div class="container">
 
-    <h2 class="section-title fade-in">なぜ改善しないのか？</h2>
+    <h2 class="section-title fade-in">なぜ繰り返しやすいのか？</h2>
 
     <p class="section-lead fade-in">
       痛みが繰り返すのには、理由があります。
@@ -138,7 +147,7 @@
         <ul>
           <li>痛い部分だけにアプローチ</li>
           <li>その場しのぎの対処</li>
-          <li>原因を深く分析しない</li>
+          <li>不調につながる要因まで見きれない</li>
         </ul>
       </div>
 
@@ -146,9 +155,9 @@
       <div class="why-card why-positive">
         <h3>当院のアプローチ</h3>
         <ul>
-          <li>姿勢・筋肉バランスを徹底分析</li>
+          <li>姿勢・筋肉バランスを丁寧に確認</li>
           <li>日常生活のクセまで考慮</li>
-          <li>再発しにくい身体へ導く</li>
+          <li>不調を繰り返しにくい身体づくりをサポート</li>
         </ul>
       </div>
 
@@ -181,9 +190,9 @@
         </p>
 
         <ul class="treatment-points">
-          <li>姿勢・筋肉バランスを徹底分析</li>
+          <li>姿勢・筋肉バランスを丁寧にチェック</li>
           <li>骨盤・背骨の調整</li>
-          <li>再発防止までサポート</li>
+          <li>日常生活のアドバイスまでサポート</li>
         </ul>
       </div>
 
@@ -207,7 +216,7 @@
       <div class="step-item">
         <span class="step-number">03</span>
         <h4>原因分析</h4>
-        <p>痛みの根本原因を明確にし、<br class="sp-only">最適な施術方針を<br class="pc-only">決定します。</p>
+        <p>不調につながる要因を確認し、<br class="sp-only">施術方針を<br class="pc-only">決定します。</p>
       </div>
 
       <div class="step-item">
@@ -218,7 +227,7 @@
 
       <div class="step-item">
         <span class="step-number">05</span>
-        <h4>再発防止アドバイス</h4>
+        <h4>セルフケアアドバイス</h4>
         <p>日常生活で気をつける<br class="pc-only">ポイントも<br class="sp-only">丁寧にお伝えします。</p>
       </div>
 
@@ -228,12 +237,12 @@
 </section>
 
 <!-- ===============================
-     改善事例
+     お客様の声
 ================================= -->
 <section id="case">
   <div class="container">
 
-    <h2 class="section-title fade-in">改善事例</h2>
+    <h2 class="section-title fade-in">お客様の声</h2>
 
     <p class="section-lead fade-in">
       実際に施術を受けられた方の<br class="sp-only">お声をご紹介します。
@@ -252,7 +261,7 @@
 
         <div class="case-block after">
           <span>After</span>
-          <p>数回の施術で大きく改善。<br class="sp-only">今では趣味の旅行を楽しめています。</p>
+          <p>腰まわりが軽く感じられ、<br class="sp-only">今では趣味の旅行も楽しめています。</p>
         </div>
 
         <div class="case-rating">★★★★★</div>
@@ -269,13 +278,17 @@
 
         <div class="case-block after">
           <span>After</span>
-          <p>施術後は頭痛が軽減し、仕事への集中力も戻りました。</p>
+          <p>肩まわりが軽く感じられ、仕事中のつらさも和らぎました。</p>
         </div>
 
         <div class="case-rating">★★★★★</div>
       </div>
 
     </div>
+
+    <p class="case-note fade-in">
+      ※掲載内容はデモです。感じ方には個人差があります。
+    </p>
 
   </div>
 </section>
@@ -295,7 +308,7 @@
         <span class="reason-number">01</span>
         <h3>医療系国家資格を持つ施術者が担当</h3>
         <p>
-          解剖学・運動学に基づき、身体の構造を<br>理解したうえで根拠ある施術を行います。<br>感覚ではなく、理論に基づいた整体です。
+          解剖学・運動学の知識に基づき、身体の構造を<br>理解したうえで施術を行います。<br>感覚だけに頼らない、説明を大切にした整体です。
         </p>
       </div>
 
@@ -304,16 +317,16 @@
         <span class="reason-number">02</span>
         <h3>完全予約制・担当制で一貫対応</h3>
         <p>
-          毎回同じ施術者が責任を持って対応。<br>お身体の変化を継続的に把握し、<br>段階的に改善へ導きます。
+          毎回同じ施術者が責任を持って対応。<br>お身体の変化を継続的に把握し、<br>段階的な変化をサポートします。
         </p>
       </div>
 
       <!-- Reason 03 -->
       <div class="reason-item fade-in">
         <span class="reason-number">03</span>
-        <h3>再発防止までを見据えた根本施術</h3>
+        <h3>日常生活まで見据えた施術</h3>
         <p>
-          その場しのぎでは終わらせません。<br>姿勢・生活習慣・筋肉バランスまで分析し、再発しにくい身体づくりを目指します。
+          その場しのぎで終わらせないために、<br>姿勢・生活習慣・筋肉バランスまで確認し、不調を繰り返しにくい身体づくりを目指します。
         </p>
       </div>
 
@@ -334,7 +347,7 @@
 
       <!-- 画像 -->
       <div class="profile-image fade-in">
-        <img src="img/profile.jpg" alt="院長の写真" loading="lazy">
+        <img src="img/counseling.jpg" alt="青葉整骨院のカウンセリング風景" loading="lazy">
       </div>
 
       <!-- テキスト -->
@@ -343,11 +356,11 @@
 
         <p>
           国家資格取得後、15年以上にわたり多くの患者様の施術を担当。<br>
-          これまで延べ3万人以上の施術実績があります。
+          肩こり・腰痛など、慢性的なお悩みに向き合ってきました。
         </p>
 
         <p>
-          痛みの原因を的確に見極めることを大切にし、<br class="sp-only">その場しのぎではない根本改善を目指した施術を<br class="sp-only">行っています。
+          痛みにつながる要因を丁寧に見極めることを大切にし、<br class="sp-only">その場しのぎで終わらない施術を<br class="sp-only">目指しています。
         </p>
 
         <p>
@@ -370,7 +383,7 @@
     <h2 class="section-title fade-in">料金案内</h2>
 
     <p class="price-lead fade-in">
-      無理な回数券の販売や強引な勧誘は<br class="sp-only">一切ありません。<br>お身体の状態に合わせて最適な通院ペースを<br class="sp-only">ご提案いたします。
+      無理な回数券の販売や強引な勧誘は<br class="sp-only">一切ありません。<br>お身体の状態に合わせて目安となる通院ペースを<br class="sp-only">ご提案いたします。
     </p>
 
     <div class="price-table-wrapper fade-in">
@@ -414,7 +427,7 @@
     <div class="faq-list fade-in">
 
       <div class="faq-item">
-        <button class="faq-question">
+        <button class="faq-question" type="button" aria-expanded="false">
           施術は痛くありませんか？
           <span class="faq-icon">＋</span>
         </button>
@@ -426,19 +439,19 @@
       </div>
 
       <div class="faq-item">
-        <button class="faq-question">
-          何回くらい通えば良くなりますか？
+        <button class="faq-question" type="button" aria-expanded="false">
+          何回くらい通えばいいですか？
           <span class="faq-icon">＋</span>
         </button>
         <div class="faq-answer">
           <p>
-            症状の程度によって異なります。<br>初回時にお身体の状態を確認し、最適な<br class="sp-only">通院ペースをご提案いたします。
+            症状の程度によって異なります。<br>初回時にお身体の状態を確認し、目安となる<br class="sp-only">通院ペースをご提案いたします。
           </p>
         </div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-question">
+        <button class="faq-question" type="button" aria-expanded="false">
           保険は使えますか？
           <span class="faq-icon">＋</span>
         </button>
@@ -500,20 +513,20 @@
     <form id="contactForm" class="contact-form fade-in">
 
       <div class="form-group">
-        <label>お名前（必須）</label>
-        <input type="text" required>
+        <label for="name">お名前（必須）</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
         <span class="error-message">入力してください</span>
       </div>
 
       <div class="form-group">
-        <label>メールアドレス（必須）</label>
-        <input type="email" required>
+        <label for="email">メールアドレス（必須）</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
         <span class="error-message">入力してください</span>
       </div>
 
       <div class="form-group">
-        <label>お問い合わせ内容</label>
-        <textarea rows="5"></textarea>
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" rows="5"></textarea>
       </div>
 
    <div class="contact-button-wrapper">
@@ -550,6 +563,12 @@
 
   </div>
 </footer>
+
+<div class="sp-fixed-cta">
+  <a href="#contact" class="sp-cta-button">
+    初回3,980円で予約する
+  </a>
+</div>
 
   <script src="script.js"></script>
 </body>
